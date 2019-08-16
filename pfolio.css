@@ -122,6 +122,7 @@ img{
 .projects-section-header{
     max-width: 640px;
     margin:0 auto 7rem auto;
+
     
 }
 @media(max-width: 28.75em){
@@ -137,6 +138,8 @@ img{
     max-width: 1280px;
     margin:0 auto;
     margin-bottom: 6rem;
+    
+    
 }
 @media(max-width: 30.625em){
     .projects-section{
@@ -146,10 +149,12 @@ img{
         grid-template-columns: 1fr;
     }
 }
+
 .projects{
-    background: var(--main-gray);
+    background-color:#130f40;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     border-radius: 2px;
+    border: solid 4px black;
 }
 .code{
     color: #130f40;
@@ -251,4 +256,80 @@ footer > p {
 flex-direction: column;
 text-align: center;
     }
+}
+.container{
+    width:10px;
+    height:8rem;
+    
+    background:#5f27cd;
+    float:left;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: center;
+  }
+  .container1{
+    width:10px;
+    height:8rem;
+    
+    background:#5f27cd;
+    float:right;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: center;
+  }
+ 
+
+  .react-logo{
+    display: inline-block;
+    border-radius:50%;
+    border:10px solid #00d8ff;
+
+    animation-name:rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+
+  .react-logo , .react-logo:before , .react-logo:after{
+    position:absolute;
+    display: inline-block;
+    width:200px;
+    height:70px;
+    border-radius:50%;
+    border:10px solid #00d8ff;
+  }
+
+  .nucleo , .react-logo , .react-logo:before , .react-logo:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nucleo{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    background:#00d8ff;
+  }
+
+  .react-logo:before , .react-logo:after{
+    content:"";
+  }
+
+  .react-logo:after{
+    transform:rotate(-57deg);
+  }
+
+  .react-logo:before{
+    transform:rotate(57deg);
+  }
+  @keyframes rotate{
+
+    100%{
+      transform:rotate(360deg);
+    }
+  }
 }
